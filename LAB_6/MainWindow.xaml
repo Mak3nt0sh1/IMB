@@ -1,0 +1,18 @@
+﻿<Window x:Class="LAB_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ProblemsSolver.3000" Height="417" Width="797">
+    <Grid RenderTransformOrigin="0.49,0.505" Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock FontWeight="Bold" Margin="0,0,0,5" HorizontalAlignment="Center"><Run Language="ru-ru" Text="Проблемы компьютера"/></TextBlock>
+            <ListBox x:Name="problemListBox" Height="200" Width="350" HorizontalAlignment="Center" />
+            <Button x:Name="forwardButton" Content="Начать тестирование" Click="forwardButton_Click" RenderTransformOrigin="0.524,0.592" Height="50" Width="148" IsDefault="True" HorizontalAlignment="Center" />
+        </StackPanel>
+        <Image HorizontalAlignment="Center" Height="310" VerticalAlignment="Top" Width="311" Source="/Images/Motherboard.jpg" Grid.Column="1" Margin="0,32,0,0"/>
+    </Grid>
+
+</Window>
